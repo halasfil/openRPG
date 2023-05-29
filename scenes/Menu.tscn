@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://8la1m4a4u6l1"]
+
+[ext_resource type="Script" path="res://scripts/Button.gd" id="1_7qgem"]
+
+[node name="Menu" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(225, 108)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 91.0
+offset_top = 36.0
+offset_right = 188.0
+offset_bottom = 95.0
+scale = Vector2(2.68308, 2.51176)
+theme_override_font_sizes/font_size = 37
+text = "PLAY"
+script = ExtResource("1_7qgem")

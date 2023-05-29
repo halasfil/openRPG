@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Texture2D" uid="uid://cihj5kadpauyi" path="res://assets/player/util/dust.png" id="1_yhout"]
+[ext_resource type="Script" path="res://scripts/DodgeDust.gd" id="2_dhmb4"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ijkht"]
+lifetime_randomness = 0.5
+emission_shape = 2
+emission_sphere_radius = 1.0
+particle_flag_disable_z = true
+direction = Vector3(1, 1, 0)
+spread = 34.77
+gravity = Vector3(0, 1, 0)
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+angle_min = -8.2
+angle_max = 57.3
+scale_max = 1.3
+color = Color(1, 1, 1, 0.419608)
+
+[node name="DodgeDust" type="GPUParticles2D"]
+rotation = 0.0698132
+emitting = false
+amount = 4
+process_material = SubResource("ParticleProcessMaterial_ijkht")
+texture = ExtResource("1_yhout")
+lifetime = 2.0
+one_shot = true
+speed_scale = 2.0
+explosiveness = 1.0
+randomness = 1.0
+visibility_rect = Rect2(-1, -1, 8, 8)
+local_coords = true
+script = ExtResource("2_dhmb4")
