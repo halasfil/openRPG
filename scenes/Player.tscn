@@ -804,7 +804,7 @@ libraries = {
 
 [node name="Camera2D" type="Camera2D" parent="."]
 z_index = 10
-zoom = Vector2(8, 8)
+zoom = Vector2(4, 4)
 
 [node name="DodgeDust" parent="." instance=ExtResource("7_vau2s")]
 position = Vector2(0, 16)
